@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84077E5A1933464700FE98BF /* FLIROneSDK.framework */; };
+		84622DF51B3B847C004F75D0 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */; };
+		84D742281AD59CD200CDAD11 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */; };
+		84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87BE192DCAF800713E53 /* InfoPlist.strings */; };
+		84FA87C2192DCAF800713E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87C1192DCAF800713E53 /* main.m */; };
+		84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */; };
+		84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87C7192DCAF800713E53 /* Main.storyboard */; };
+		84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.mm */; };
+		84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87CD192DCAF800713E53 /* Images.xcassets */; };
+		84FA87DF192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87DD192DCAF800713E53 /* InfoPlist.strings */; };
+		84FA87E1192DCAF800713E53 /* FLIROneSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */; };
+		C65D52961FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */; };
+		C65D52981FB4173200F7CA60 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52971FB4173200F7CA60 /* Start.png */; };
+		C65D529C1FB41D7F00F7CA60 /* Backa.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52991FB41D7F00F7CA60 /* Backa.png */; };
+		C65D529D1FB41D7F00F7CA60 /* Fronta.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D529A1FB41D7F00F7CA60 /* Fronta.png */; };
+		C65D529E1FB41D7F00F7CA60 /* Sidea.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D529B1FB41D7F00F7CA60 /* Sidea.png */; };
+		C65D52A21FB4345900F7CA60 /* Sideb.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D529F1FB4345800F7CA60 /* Sideb.png */; };
+		C65D52A31FB4345900F7CA60 /* Backb.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52A01FB4345900F7CA60 /* Backb.png */; };
+		C65D52A41FB4345900F7CA60 /* Frontb.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52A11FB4345900F7CA60 /* Frontb.png */; };
+		C65D52A91FB5099700F7CA60 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52A81FB5099600F7CA60 /* white.png */; };
+		C65D52AD1FB5562300F7CA60 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52AC1FB5562300F7CA60 /* email.png */; };
+		C65D52AF1FB571C700F7CA60 /* Ministryblk.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52AE1FB571C700F7CA60 /* Ministryblk.png */; };
+		C65D52B21FB5732400F7CA60 /* pdf.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D52B11FB5732400F7CA60 /* pdf.m */; };
+		C65D52B51FB580F800F7CA60 /* PDFImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */; };
+		C6F0E0BF1FB0FA25006A6428 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */; };
+		C81EA33A1F295E8B00388010 /* FLIROneSDKGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */; };
+		C81EA33C1F2A66A300388010 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81EA33B1F2A66A300388010 /* GLKit.framework */; };
+		C847DD071EF099FB000EAF76 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */; };
+		C8AC81A31F1D636800E4A932 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AC81A21F1D636800E4A932 /* opencv2.framework */; };
+		C8DD6CB21EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FA87D8192DCAF800713E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FA87AA192DCAF800713E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FA87B1192DCAF800713E53;
+			remoteInfo = FLIROneSDKExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		84077E5A1933464700FE98BF /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK.framework; sourceTree = "<group>"; };
+		84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = ../../sampleframes_hq.bundle; sourceTree = "<group>"; };
+		84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		84FA87B2192DCAF800713E53 /* Heat Signature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heat Signature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA87BD192DCAF800713E53 /* HeatSig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HeatSig.plist; sourceTree = "<group>"; };
+		84FA87BF192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84FA87C1192DCAF800713E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FA87C3192DCAF800713E53 /* FLIROneSDKExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FLIROneSDKExample-Prefix.pch"; sourceTree = "<group>"; };
+		84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKExampleAppDelegate.h; sourceTree = "<group>"; };
+		84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleAppDelegate.m; sourceTree = "<group>"; };
+		84FA87C8192DCAF800713E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKExampleViewController.h; sourceTree = "<group>"; };
+		84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FLIROneSDKExampleViewController.mm; sourceTree = "<group>"; };
+		84FA87CD192DCAF800713E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84FA87D3192DCAF800713E53 /* HeatSignature.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatSignature.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA87DC192DCAF800713E53 /* FLIROneSDKExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FLIROneSDKExampleTests-Info.plist"; sourceTree = "<group>"; };
+		84FA87DE192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleTests.m; sourceTree = "<group>"; };
+		C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ministry Wordmark Copy 6@1x.png"; sourceTree = "<group>"; };
+		C65D52971FB4173200F7CA60 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		C65D52991FB41D7F00F7CA60 /* Backa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Backa.png; path = FLIROneSDKExampleTests/Backa.png; sourceTree = SOURCE_ROOT; };
+		C65D529A1FB41D7F00F7CA60 /* Fronta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fronta.png; path = FLIROneSDKExampleTests/Fronta.png; sourceTree = SOURCE_ROOT; };
+		C65D529B1FB41D7F00F7CA60 /* Sidea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sidea.png; path = FLIROneSDKExampleTests/Sidea.png; sourceTree = SOURCE_ROOT; };
+		C65D529F1FB4345800F7CA60 /* Sideb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sideb.png; sourceTree = "<group>"; };
+		C65D52A01FB4345900F7CA60 /* Backb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backb.png; sourceTree = "<group>"; };
+		C65D52A11FB4345900F7CA60 /* Frontb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frontb.png; sourceTree = "<group>"; };
+		C65D52A81FB5099600F7CA60 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		C65D52AC1FB5562300F7CA60 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		C65D52AE1FB571C700F7CA60 /* Ministryblk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ministryblk.png; sourceTree = "<group>"; };
+		C65D52B01FB5732400F7CA60 /* pdf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pdf.h; sourceTree = "<group>"; };
+		C65D52B11FB5732400F7CA60 /* pdf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pdf.m; sourceTree = "<group>"; };
+		C65D52B31FB580F800F7CA60 /* PDFImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageConverter.h; sourceTree = "<group>"; };
+		C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageConverter.m; sourceTree = "<group>"; };
+		C6BEF08E1FB24FD500340326 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C6F0E0BD1FB0FA25006A6428 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C81EA3381F295E8B00388010 /* FLIROneSDKGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKGLViewController.h; sourceTree = "<group>"; };
+		C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKGLViewController.m; sourceTree = "<group>"; };
+		C81EA33B1F2A66A300388010 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C8AC81A21F1D636800E4A932 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
+		C8DD6CB01EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKEditorViewController.h; sourceTree = "<group>"; };
+		C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKEditorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FA87AF192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81EA33C1F2A66A300388010 /* GLKit.framework in Frameworks */,
+				C847DD071EF099FB000EAF76 /* AssetsLibrary.framework in Frameworks */,
+				84D742281AD59CD200CDAD11 /* Accelerate.framework in Frameworks */,
+				C8AC81A31F1D636800E4A932 /* opencv2.framework in Frameworks */,
+				84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87D0192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FA87A9192DCAF800713E53 = {
+			isa = PBXGroup;
+			children = (
+				84FA87BB192DCAF800713E53 /* HeatSig */,
+				84FA87DA192DCAF800713E53 /* FLIROneSDKExampleAppTests */,
+				84FA87B4192DCAF800713E53 /* Frameworks */,
+				84FA87B3192DCAF800713E53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FA87B3192DCAF800713E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87B2192DCAF800713E53 /* Heat Signature.app */,
+				84FA87D3192DCAF800713E53 /* HeatSignature.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FA87B4192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF08E1FB24FD500340326 /* libsqlite3.0.tbd */,
+				C81EA33B1F2A66A300388010 /* GLKit.framework */,
+				C8AC81A21F1D636800E4A932 /* opencv2.framework */,
+				0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */,
+				84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */,
+				84077E5A1933464700FE98BF /* FLIROneSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84FA87BB192DCAF800713E53 /* HeatSig */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */,
+				84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */,
+				84FA87C7192DCAF800713E53 /* Main.storyboard */,
+				C6F0E0BD1FB0FA25006A6428 /* MainViewController.h */,
+				C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */,
+				84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */,
+				84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.mm */,
+				C65D52B01FB5732400F7CA60 /* pdf.h */,
+				C65D52B11FB5732400F7CA60 /* pdf.m */,
+				C8DD6CB01EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.h */,
+				C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */,
+				C81EA3381F295E8B00388010 /* FLIROneSDKGLViewController.h */,
+				C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */,
+				84FA87CD192DCAF800713E53 /* Images.xcassets */,
+				84FA87BC192DCAF800713E53 /* Supporting Files */,
+			);
+			name = HeatSig;
+			path = FLIROneSDKExample;
+			sourceTree = "<group>";
+		};
+		84FA87BC192DCAF800713E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C65D52B31FB580F800F7CA60 /* PDFImageConverter.h */,
+				C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */,
+				C65D52AE1FB571C700F7CA60 /* Ministryblk.png */,
+				C65D52AC1FB5562300F7CA60 /* email.png */,
+				C65D52A81FB5099600F7CA60 /* white.png */,
+				C65D52A01FB4345900F7CA60 /* Backb.png */,
+				C65D52A11FB4345900F7CA60 /* Frontb.png */,
+				C65D529F1FB4345800F7CA60 /* Sideb.png */,
+				C65D52991FB41D7F00F7CA60 /* Backa.png */,
+				C65D529A1FB41D7F00F7CA60 /* Fronta.png */,
+				C65D529B1FB41D7F00F7CA60 /* Sidea.png */,
+				C65D52971FB4173200F7CA60 /* Start.png */,
+				C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */,
+				84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */,
+				84FA87BD192DCAF800713E53 /* HeatSig.plist */,
+				84FA87BE192DCAF800713E53 /* InfoPlist.strings */,
+				84FA87C1192DCAF800713E53 /* main.m */,
+				84FA87C3192DCAF800713E53 /* FLIROneSDKExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FA87DA192DCAF800713E53 /* FLIROneSDKExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */,
+				84FA87DB192DCAF800713E53 /* Supporting Files */,
+			);
+			name = FLIROneSDKExampleAppTests;
+			path = FLIROneSDKExampleTests;
+			sourceTree = "<group>";
+		};
+		84FA87DB192DCAF800713E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87DC192DCAF800713E53 /* FLIROneSDKExampleTests-Info.plist */,
+				84FA87DD192DCAF800713E53 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FA87B1192DCAF800713E53 /* FLIROneSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA87E4192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExample" */;
+			buildPhases = (
+				84FA87AE192DCAF800713E53 /* Sources */,
+				84FA87AF192DCAF800713E53 /* Frameworks */,
+				84FA87B0192DCAF800713E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLIROneSDKExample;
+			productName = FLIROneSDKExample;
+			productReference = 84FA87B2192DCAF800713E53 /* Heat Signature.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FA87D2192DCAF800713E53 /* FLIROneSDKExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA87E7192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExampleTests" */;
+			buildPhases = (
+				84FA87CF192DCAF800713E53 /* Sources */,
+				84FA87D0192DCAF800713E53 /* Frameworks */,
+				84FA87D1192DCAF800713E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FA87D9192DCAF800713E53 /* PBXTargetDependency */,
+			);
+			name = FLIROneSDKExampleTests;
+			productName = FLIROneSDKExampleTests;
+			productReference = 84FA87D3192DCAF800713E53 /* HeatSignature.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FA87AA192DCAF800713E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLIROneSDKExample;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = novacoast;
+				TargetAttributes = {
+					84FA87B1192DCAF800713E53 = {
+						DevelopmentTeam = 8K2K26F4SE;
+					};
+					84FA87D2192DCAF800713E53 = {
+						DevelopmentTeam = 2WGS4BCJ8Z;
+						TestTargetID = 84FA87B1192DCAF800713E53;
+					};
+				};
+			};
+			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "HeatSig" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FA87A9192DCAF800713E53;
+			productRefGroup = 84FA87B3192DCAF800713E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FA87B1192DCAF800713E53 /* FLIROneSDKExample */,
+				84FA87D2192DCAF800713E53 /* FLIROneSDKExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FA87B0192DCAF800713E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84622DF51B3B847C004F75D0 /* sampleframes_hq.bundle in Resources */,
+				84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */,
+				C65D52981FB4173200F7CA60 /* Start.png in Resources */,
+				C65D529C1FB41D7F00F7CA60 /* Backa.png in Resources */,
+				C65D52AF1FB571C700F7CA60 /* Ministryblk.png in Resources */,
+				84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */,
+				C65D52A31FB4345900F7CA60 /* Backb.png in Resources */,
+				C65D52A21FB4345900F7CA60 /* Sideb.png in Resources */,
+				C65D52AD1FB5562300F7CA60 /* email.png in Resources */,
+				C65D52A91FB5099700F7CA60 /* white.png in Resources */,
+				C65D52961FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png in Resources */,
+				C65D52A41FB4345900F7CA60 /* Frontb.png in Resources */,
+				84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */,
+				C65D529D1FB41D7F00F7CA60 /* Fronta.png in Resources */,
+				C65D529E1FB41D7F00F7CA60 /* Sidea.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87D1192DCAF800713E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87DF192DCAF800713E53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FA87AE192DCAF800713E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DD6CB21EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m in Sources */,
+				C6F0E0BF1FB0FA25006A6428 /* MainViewController.m in Sources */,
+				C81EA33A1F295E8B00388010 /* FLIROneSDKGLViewController.m in Sources */,
+				C65D52B51FB580F800F7CA60 /* PDFImageConverter.m in Sources */,
+				C65D52B21FB5732400F7CA60 /* pdf.m in Sources */,
+				84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */,
+				84FA87C2192DCAF800713E53 /* main.m in Sources */,
+				84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87CF192DCAF800713E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87E1192DCAF800713E53 /* FLIROneSDKExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FA87D9192DCAF800713E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FA87B1192DCAF800713E53 /* FLIROneSDKExample */;
+			targetProxy = 84FA87D8192DCAF800713E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84FA87BE192DCAF800713E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87BF192DCAF800713E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84FA87C7192DCAF800713E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87C8192DCAF800713E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FA87DD192DCAF800713E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87DE192DCAF800713E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FA87E2192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FLIROneSDKExample/HeatSig.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Thermal Mirror";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84FA87E3192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FLIROneSDKExample/HeatSig.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "Thermal Mirror";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FA87E5192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8K2K26F4SE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = FLIROneSDKExample/HeatSig.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-Mirror";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "Heat Signature";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s arm64 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84FA87E6192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8K2K26F4SE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..",
+					"$(PROJECT_DIR)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = FLIROneSDKExample/HeatSig.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-Mirror";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "Heat Signature";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s arm64 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84FA87E8192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeatSig";
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ministryofsupply.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = HeatSignature;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84FA87E9192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeatSig";
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ministryofsupply.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = HeatSignature;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "HeatSig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E2192DCAF800713E53 /* Debug */,
+				84FA87E3192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA87E4192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E5192DCAF800713E53 /* Debug */,
+				84FA87E6192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA87E7192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E8192DCAF800713E53 /* Debug */,
+				84FA87E9192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FA87AA192DCAF800713E53 /* Project object */;
+}
