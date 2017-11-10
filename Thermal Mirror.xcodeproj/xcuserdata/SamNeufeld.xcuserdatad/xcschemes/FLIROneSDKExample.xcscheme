@@ -17,7 +17,7 @@
                BlueprintIdentifier = "84FA87B1192DCAF800713E53"
                BuildableName = "Heat Signature.app"
                BlueprintName = "FLIROneSDKExample"
-               ReferencedContainer = "container:HeatSig.xcodeproj">
+               ReferencedContainer = "container:Thermal Mirror.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "84FA87D2192DCAF800713E53"
                BuildableName = "HeatSignature.xctest"
                BlueprintName = "FLIROneSDKExampleTests"
-               ReferencedContainer = "container:HeatSig.xcodeproj">
+               ReferencedContainer = "container:Thermal Mirror.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -46,7 +46,7 @@
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
             BuildableName = "Heat Signature.app"
             BlueprintName = "FLIROneSDKExample"
-            ReferencedContainer = "container:HeatSig.xcodeproj">
+            ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -70,7 +70,7 @@
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
             BuildableName = "Heat Signature.app"
             BlueprintName = "FLIROneSDKExample"
-            ReferencedContainer = "container:HeatSig.xcodeproj">
+            ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -89,7 +89,7 @@
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
             BuildableName = "Heat Signature.app"
             BlueprintName = "FLIROneSDKExample"
-            ReferencedContainer = "container:HeatSig.xcodeproj">
+            ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
