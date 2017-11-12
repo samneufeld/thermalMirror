@@ -121,7 +121,7 @@
 		84FA87A9192DCAF800713E53 = {
 			isa = PBXGroup;
 			children = (
-				84FA87BB192DCAF800713E53 /* HeatSig */,
+				84FA87BB192DCAF800713E53 /* Thermal Mirror */,
 				84FA87DA192DCAF800713E53 /* FLIROneSDKExampleAppTests */,
 				84FA87B4192DCAF800713E53 /* Frameworks */,
 				84FA87B3192DCAF800713E53 /* Products */,
@@ -150,7 +150,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84FA87BB192DCAF800713E53 /* HeatSig */ = {
+		84FA87BB192DCAF800713E53 /* Thermal Mirror */ = {
 			isa = PBXGroup;
 			children = (
 				84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */,
@@ -169,7 +169,7 @@
 				84FA87CD192DCAF800713E53 /* Images.xcassets */,
 				84FA87BC192DCAF800713E53 /* Supporting Files */,
 			);
-			name = HeatSig;
+			name = "Thermal Mirror";
 			path = FLIROneSDKExample;
 			sourceTree = "<group>";
 		};

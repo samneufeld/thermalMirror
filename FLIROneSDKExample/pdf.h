@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *image1;
 @property (strong, nonatomic) IBOutlet UIImageView *image2;
 @property (strong, nonatomic) IBOutlet UIView *viewIm;
+- (IBAction)button:(id)sender;
 
 @end

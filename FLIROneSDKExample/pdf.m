@@ -10,6 +10,7 @@
 #import "PDFImageConverter.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @interface pdf () <MFMailComposeViewControllerDelegate>
 
@@ -17,9 +18,30 @@
 
 @implementation pdf
 
+-(void)sendEmail {
+    // From within your active view controller
+    if([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        mailCont.mailComposeDelegate = self;        // Required to invoke mailComposeController when send
+        
+        [mailCont setSubject:@"Email subject"];
+        [mailCont setToRecipients:[NSArray arrayWithObject:@"samneufeld96@gmail.com"]];
+        [mailCont setMessageBody:@"Email message" isHTML:NO];
+        
+        [self presentViewController:mailCont animated:NO completion:nil];
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    [controller dismissViewControllerAnimated:NO completion:nil];
+    
+}
+
+
 
 
 - (void)viewDidLoad {
+    
     _image0.image=_im0;
     _image1.image=_im1;
     _image2.image=_im2;
@@ -31,6 +53,7 @@
     [UIImagePNGRepresentation(_im0) writeToFile:filePath atomically:YES];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 
@@ -49,4 +72,7 @@
 }
 */
 
+- (IBAction)button:(id)sender {
+    [self sendEmail];
+}
 @end

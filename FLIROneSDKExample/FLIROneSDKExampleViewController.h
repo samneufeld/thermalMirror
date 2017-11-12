@@ -32,5 +32,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *settings;
 @property (strong, nonatomic) IBOutlet UILabel *successMessage;
 @property (strong, nonatomic) IBOutlet UIButton *restartButton;
+@property (strong, nonatomic) IBOutlet UILabel *email;
 
 @end

@@ -13,7 +13,7 @@
 
 
 
-@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate> {
+@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate>{
     int counter;
 }
 
@@ -49,6 +49,8 @@
     [_emailQuery resignFirstResponder];
     return YES;
 }
+
+
 - (void)viewDidLoad {
     _emailQuery.delegate=self;
     _switcher.alpha=0;

@@ -10,6 +10,7 @@
 #import "FLIROneSDKEditorViewController.h"
 #import "Gallery.h"
 #import "pdf.h"
+#import <MessageUI/MFMailComposeViewController.h>
 
 //#import <FLIROneSDK/FLIROneSDKLibraryViewController.h>
 
@@ -151,6 +152,11 @@ UIImage *img2;
 {
     
     [super viewDidLoad];
+    if (![MFMailComposeViewController canSendMail]) {
+        _email.text=@"Email not configured! Please connect email account in ipad settings.";
+    } else {
+        _email.text=@"Email configured";
+    }
     
     //UI stuff
     self.thermalImageView.contentMode = UIViewContentModeScaleAspectFit;
