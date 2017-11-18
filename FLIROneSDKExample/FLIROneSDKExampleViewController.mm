@@ -10,7 +10,7 @@
 #import "FLIROneSDKEditorViewController.h"
 #import "Gallery.h"
 #import "pdf.h"
-#import <MessageUI/MFMailComposeViewController.h>
+
 
 //#import <FLIROneSDK/FLIROneSDKLibraryViewController.h>
 
@@ -23,6 +23,7 @@
 @interface FLIROneSDKExampleViewController (){
 int timeTick;
 int photoID;
+int timerLength;
 NSURL *photoURL0;
 NSURL *photoURL1;
 NSURL *photoURL2;
@@ -150,13 +151,10 @@ UIImage *img2;
 
 - (void)viewDidLoad
 {
+    timerLength=1;
     
     [super viewDidLoad];
-    if (![MFMailComposeViewController canSendMail]) {
-        _email.text=@"Email not configured! Please connect email account in ipad settings.";
-    } else {
-        _email.text=@"Email configured";
-    }
+
     
     //UI stuff
     self.thermalImageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -244,7 +242,7 @@ UIImage *img2;
     _frontImage.highlighted=FALSE;
     _backImage.highlighted=FALSE;
     _sideImage.highlighted=FALSE;
-    timeTick=8;
+    timeTick=timerLength+1;
     photoID=0;
     [super viewDidAppear:animated];
     
@@ -1081,7 +1079,7 @@ UIImage *img2;
         [self capturePhoto:nil];
         if(photoID<2){
             photoID=photoID+1;
-            timeTick=8;
+            timeTick=timerLength+1;
             [NSTimer scheduledTimerWithTimeInterval:1.0
                                              target:self
                                            selector:@selector(theAction)

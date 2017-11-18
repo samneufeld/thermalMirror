@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FLIROneSDKEditorViewController : UIViewController <UITextFieldDelegate>
+@interface FLIROneSDKEditorViewController : UIViewController <UITextFieldDelegate>;
 
 @property (strong, nonatomic) IBOutlet UITextField *emailQuery;
 @property (strong, nonatomic) NSURL *filepath;
@@ -26,10 +26,13 @@
 @property (strong, nonatomic) IBOutlet UIImageView *entryBar;
 @property (strong, nonatomic) IBOutlet UISwitch *switcher;
 @property (strong, nonatomic) IBOutlet UILabel *marketText;
+- (IBAction)emailer:(id)sender;
+
 
 @property (strong, nonatomic) IBOutlet UILabel *dialog;
 - (IBAction)confirm:(id)sender;
 - (IBAction)deny:(id)sender;
 - (IBAction)toggle:(id)sender;
+
 
 @end

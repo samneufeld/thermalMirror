@@ -10,7 +10,7 @@
 
 
 #import <FLIROneSDK/FLIROneSDK.h>
-//#import <FlirOneFramework/FLIROne.h>
+//import <FlirOneFramework/FLIROne.h>
 
 @interface FLIROneSDKExampleViewController : UIViewController <FLIROneSDKImageReceiverDelegate, FLIROneSDKStreamManagerDelegate, FLIROneSDKVideoRendererDelegate, FLIROneSDKImageEditorDelegate>
    

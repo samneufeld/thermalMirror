@@ -18,6 +18,14 @@
 		84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87CD192DCAF800713E53 /* Images.xcassets */; };
 		84FA87DF192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87DD192DCAF800713E53 /* InfoPlist.strings */; };
 		84FA87E1192DCAF800713E53 /* FLIROneSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */; };
+		C65175F81FBAB53F008D0458 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C65175ED1FBAB53F008D0458 /* Base64Transcoder.m */; };
+		C65175F91FBAB53F008D0458 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C65175EF1FBAB53F008D0458 /* HSK_CFUtilities.m */; };
+		C65175FA1FBAB53F008D0458 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C65175F11FBAB53F008D0458 /* NSData+Base64Additions.m */; };
+		C65175FB1FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C65175F31FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C65175FC1FBAB53F008D0458 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C65175F51FBAB53F008D0458 /* SKPSMTPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C65175FD1FBAB53F008D0458 /* waitOverLay.png in Resources */ = {isa = PBXBuildFile; fileRef = C65175F61FBAB53F008D0458 /* waitOverLay.png */; };
+		C65175FE1FBAB53F008D0458 /* waitOverLay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65175F71FBAB53F008D0458 /* waitOverLay@2x.png */; };
+		C65176001FBAC8AE008D0458 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65175FF1FBAC8A6008D0458 /* CFNetwork.framework */; };
 		C65D52961FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */; };
 		C65D52981FB4173200F7CA60 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52971FB4173200F7CA60 /* Start.png */; };
 		C65D529C1FB41D7F00F7CA60 /* Backa.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52991FB41D7F00F7CA60 /* Backa.png */; };
@@ -31,12 +39,10 @@
 		C65D52AF1FB571C700F7CA60 /* Ministryblk.png in Resources */ = {isa = PBXBuildFile; fileRef = C65D52AE1FB571C700F7CA60 /* Ministryblk.png */; };
 		C65D52B21FB5732400F7CA60 /* pdf.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D52B11FB5732400F7CA60 /* pdf.m */; };
 		C65D52B51FB580F800F7CA60 /* PDFImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */; };
-		C6F0E0BF1FB0FA25006A6428 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */; };
-		C81EA33A1F295E8B00388010 /* FLIROneSDKGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */; };
 		C81EA33C1F2A66A300388010 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81EA33B1F2A66A300388010 /* GLKit.framework */; };
 		C847DD071EF099FB000EAF76 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */; };
 		C8AC81A31F1D636800E4A932 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AC81A21F1D636800E4A932 /* opencv2.framework */; };
-		C8DD6CB21EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */; };
+		C8DD6CB21EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +60,7 @@
 		84077E5A1933464700FE98BF /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK.framework; sourceTree = "<group>"; };
 		84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = ../../sampleframes_hq.bundle; sourceTree = "<group>"; };
 		84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		84FA87B2192DCAF800713E53 /* Heat Signature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heat Signature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA87B2192DCAF800713E53 /* Thermal Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thermal Mirror.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FA87BD192DCAF800713E53 /* HeatSig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HeatSig.plist; sourceTree = "<group>"; };
 		84FA87BF192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84FA87C1192DCAF800713E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +75,21 @@
 		84FA87DC192DCAF800713E53 /* FLIROneSDKExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FLIROneSDKExampleTests-Info.plist"; sourceTree = "<group>"; };
 		84FA87DE192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleTests.m; sourceTree = "<group>"; };
+		C65175EC1FBAB53F008D0458 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		C65175ED1FBAB53F008D0458 /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Transcoder.m; sourceTree = "<group>"; };
+		C65175EE1FBAB53F008D0458 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		C65175EF1FBAB53F008D0458 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
+		C65175F01FBAB53F008D0458 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		C65175F11FBAB53F008D0458 /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		C65175F21FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		C65175F31FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		C65175F41FBAB53F008D0458 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		C65175F51FBAB53F008D0458 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
+		C65175F61FBAB53F008D0458 /* waitOverLay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waitOverLay.png; sourceTree = "<group>"; };
+		C65175F71FBAB53F008D0458 /* waitOverLay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waitOverLay@2x.png"; sourceTree = "<group>"; };
+		C65175FF1FBAC8A6008D0458 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C65176011FBAD3EE008D0458 /* waitOverLay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waitOverLay.png; sourceTree = "<group>"; };
+		C65176021FBAD3FB008D0458 /* waitOverLay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waitOverLay@2x.png"; sourceTree = "<group>"; };
 		C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ministry Wordmark Copy 6@1x.png"; sourceTree = "<group>"; };
 		C65D52971FB4173200F7CA60 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
 		C65D52991FB41D7F00F7CA60 /* Backa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Backa.png; path = FLIROneSDKExampleTests/Backa.png; sourceTree = SOURCE_ROOT; };
@@ -84,11 +105,6 @@
 		C65D52B11FB5732400F7CA60 /* pdf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pdf.m; sourceTree = "<group>"; };
 		C65D52B31FB580F800F7CA60 /* PDFImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageConverter.h; sourceTree = "<group>"; };
 		C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageConverter.m; sourceTree = "<group>"; };
-		C6BEF08E1FB24FD500340326 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		C6F0E0BD1FB0FA25006A6428 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		C81EA3381F295E8B00388010 /* FLIROneSDKGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKGLViewController.h; sourceTree = "<group>"; };
-		C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKGLViewController.m; sourceTree = "<group>"; };
 		C81EA33B1F2A66A300388010 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C8AC81A21F1D636800E4A932 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
 		C8DD6CB01EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKEditorViewController.h; sourceTree = "<group>"; };
@@ -100,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65176001FBAC8AE008D0458 /* CFNetwork.framework in Frameworks */,
 				C81EA33C1F2A66A300388010 /* GLKit.framework in Frameworks */,
 				C847DD071EF099FB000EAF76 /* AssetsLibrary.framework in Frameworks */,
 				84D742281AD59CD200CDAD11 /* Accelerate.framework in Frameworks */,
@@ -131,7 +148,7 @@
 		84FA87B3192DCAF800713E53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84FA87B2192DCAF800713E53 /* Heat Signature.app */,
+				84FA87B2192DCAF800713E53 /* Thermal Mirror.app */,
 				84FA87D3192DCAF800713E53 /* HeatSignature.xctest */,
 			);
 			name = Products;
@@ -140,7 +157,8 @@
 		84FA87B4192DCAF800713E53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6BEF08E1FB24FD500340326 /* libsqlite3.0.tbd */,
+				C65175FF1FBAC8A6008D0458 /* CFNetwork.framework */,
+				C65175EA1FBAB53F008D0458 /* bgEmailer */,
 				C81EA33B1F2A66A300388010 /* GLKit.framework */,
 				C8AC81A21F1D636800E4A932 /* opencv2.framework */,
 				0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */,
@@ -156,16 +174,12 @@
 				84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */,
 				84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */,
 				84FA87C7192DCAF800713E53 /* Main.storyboard */,
-				C6F0E0BD1FB0FA25006A6428 /* MainViewController.h */,
-				C6F0E0BE1FB0FA25006A6428 /* MainViewController.m */,
 				84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */,
 				84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.mm */,
 				C65D52B01FB5732400F7CA60 /* pdf.h */,
 				C65D52B11FB5732400F7CA60 /* pdf.m */,
 				C8DD6CB01EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.h */,
 				C8DD6CB11EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m */,
-				C81EA3381F295E8B00388010 /* FLIROneSDKGLViewController.h */,
-				C81EA3391F295E8B00388010 /* FLIROneSDKGLViewController.m */,
 				84FA87CD192DCAF800713E53 /* Images.xcassets */,
 				84FA87BC192DCAF800713E53 /* Supporting Files */,
 			);
@@ -176,6 +190,8 @@
 		84FA87BC192DCAF800713E53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C65176011FBAD3EE008D0458 /* waitOverLay.png */,
+				C65176021FBAD3FB008D0458 /* waitOverLay@2x.png */,
 				C65D52B31FB580F800F7CA60 /* PDFImageConverter.h */,
 				C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */,
 				C65D52AE1FB571C700F7CA60 /* Ministryblk.png */,
@@ -217,6 +233,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C65175EA1FBAB53F008D0458 /* bgEmailer */ = {
+			isa = PBXGroup;
+			children = (
+				C65175EB1FBAB53F008D0458 /* SMTPSend */,
+				C65175F61FBAB53F008D0458 /* waitOverLay.png */,
+				C65175F71FBAB53F008D0458 /* waitOverLay@2x.png */,
+			);
+			name = bgEmailer;
+			path = ../../bgEmailer;
+			sourceTree = "<group>";
+		};
+		C65175EB1FBAB53F008D0458 /* SMTPSend */ = {
+			isa = PBXGroup;
+			children = (
+				C65175EC1FBAB53F008D0458 /* Base64Transcoder.h */,
+				C65175ED1FBAB53F008D0458 /* Base64Transcoder.m */,
+				C65175EE1FBAB53F008D0458 /* HSK_CFUtilities.h */,
+				C65175EF1FBAB53F008D0458 /* HSK_CFUtilities.m */,
+				C65175F01FBAB53F008D0458 /* NSData+Base64Additions.h */,
+				C65175F11FBAB53F008D0458 /* NSData+Base64Additions.m */,
+				C65175F21FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.h */,
+				C65175F31FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.m */,
+				C65175F41FBAB53F008D0458 /* SKPSMTPMessage.h */,
+				C65175F51FBAB53F008D0458 /* SKPSMTPMessage.m */,
+			);
+			path = SMTPSend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,7 +278,7 @@
 			);
 			name = FLIROneSDKExample;
 			productName = FLIROneSDKExample;
-			productReference = 84FA87B2192DCAF800713E53 /* Heat Signature.app */;
+			productReference = 84FA87B2192DCAF800713E53 /* Thermal Mirror.app */;
 			productType = "com.apple.product-type.application";
 		};
 		84FA87D2192DCAF800713E53 /* FLIROneSDKExampleTests */ = {
@@ -265,6 +309,9 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = ministryofsupply;
 				TargetAttributes = {
+					84FA87B1192DCAF800713E53 = {
+						ProvisioningStyle = Automatic;
+					};
 					84FA87D2192DCAF800713E53 = {
 						DevelopmentTeam = 2WGS4BCJ8Z;
 						TestTargetID = 84FA87B1192DCAF800713E53;
@@ -303,7 +350,9 @@
 				84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */,
 				C65D52A31FB4345900F7CA60 /* Backb.png in Resources */,
 				C65D52A21FB4345900F7CA60 /* Sideb.png in Resources */,
+				C65175FE1FBAB53F008D0458 /* waitOverLay@2x.png in Resources */,
 				C65D52AD1FB5562300F7CA60 /* email.png in Resources */,
+				C65175FD1FBAB53F008D0458 /* waitOverLay.png in Resources */,
 				C65D52A91FB5099700F7CA60 /* white.png in Resources */,
 				C65D52961FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png in Resources */,
 				C65D52A41FB4345900F7CA60 /* Frontb.png in Resources */,
@@ -328,12 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65175FC1FBAB53F008D0458 /* SKPSMTPMessage.m in Sources */,
+				C65175FA1FBAB53F008D0458 /* NSData+Base64Additions.m in Sources */,
+				C65175F91FBAB53F008D0458 /* HSK_CFUtilities.m in Sources */,
+				C65175F81FBAB53F008D0458 /* Base64Transcoder.m in Sources */,
 				C8DD6CB21EFC99DF00D2DA3A /* FLIROneSDKEditorViewController.m in Sources */,
-				C6F0E0BF1FB0FA25006A6428 /* MainViewController.m in Sources */,
-				C81EA33A1F295E8B00388010 /* FLIROneSDKGLViewController.m in Sources */,
 				C65D52B51FB580F800F7CA60 /* PDFImageConverter.m in Sources */,
 				C65D52B21FB5732400F7CA60 /* pdf.m in Sources */,
 				84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */,
+				C65175FB1FBAB53F008D0458 /* NSStream+SKPSMTPExtensions.m in Sources */,
 				84FA87C2192DCAF800713E53 /* main.m in Sources */,
 				84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.mm in Sources */,
 			);
@@ -412,12 +464,13 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -465,11 +518,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -491,7 +545,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8K2K26F4SE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/..",
@@ -504,10 +559,11 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-Mirror";
+				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-mirror";
 				PRODUCT_MODULE_NAME = "";
-				PRODUCT_NAME = "Heat Signature";
+				PRODUCT_NAME = "Thermal Mirror";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7s arm64 armv7";
 				WRAPPER_EXTENSION = app;
@@ -521,7 +577,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8K2K26F4SE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WGS4BCJ8Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/..",
@@ -535,10 +592,11 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-Mirror";
+				PRODUCT_BUNDLE_IDENTIFIER = "Thermal-mirror";
 				PRODUCT_MODULE_NAME = "";
-				PRODUCT_NAME = "Heat Signature";
+				PRODUCT_NAME = "Thermal Mirror";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7s arm64 armv7";
 				WRAPPER_EXTENSION = app;

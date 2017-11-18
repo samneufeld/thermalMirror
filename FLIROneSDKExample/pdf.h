@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface pdf : UIViewController
+
+@interface pdf : UIViewController 
 
 @property (strong, nonatomic) UIImage *im0;
 @property (strong, nonatomic) UIImage *im1;
@@ -18,5 +19,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *image2;
 @property (strong, nonatomic) IBOutlet UIView *viewIm;
 - (IBAction)button:(id)sender;
+
+
 
 @end

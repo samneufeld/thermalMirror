@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84FA87B1192DCAF800713E53"
-               BuildableName = "Heat Signature.app"
+               BuildableName = "Thermal Mirror.app"
                BlueprintName = "FLIROneSDKExample"
                ReferencedContainer = "container:Thermal Mirror.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
-            BuildableName = "Heat Signature.app"
+            BuildableName = "Thermal Mirror.app"
             BlueprintName = "FLIROneSDKExample"
             ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
-            BuildableName = "Heat Signature.app"
+            BuildableName = "Thermal Mirror.app"
             BlueprintName = "FLIROneSDKExample"
             ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
@@ -87,7 +87,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84FA87B1192DCAF800713E53"
-            BuildableName = "Heat Signature.app"
+            BuildableName = "Thermal Mirror.app"
             BlueprintName = "FLIROneSDKExample"
             ReferencedContainer = "container:Thermal Mirror.xcodeproj">
          </BuildableReference>
