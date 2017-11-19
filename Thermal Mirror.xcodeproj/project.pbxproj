@@ -190,21 +190,9 @@
 		84FA87BC192DCAF800713E53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C65176011FBAD3EE008D0458 /* waitOverLay.png */,
-				C65176021FBAD3FB008D0458 /* waitOverLay@2x.png */,
+				BE8AF7071FC212D700CC07F6 /* images */,
 				C65D52B31FB580F800F7CA60 /* PDFImageConverter.h */,
 				C65D52B41FB580F800F7CA60 /* PDFImageConverter.m */,
-				C65D52AE1FB571C700F7CA60 /* Ministryblk.png */,
-				C65D52AC1FB5562300F7CA60 /* email.png */,
-				C65D52A81FB5099600F7CA60 /* white.png */,
-				C65D52A01FB4345900F7CA60 /* Backb.png */,
-				C65D52A11FB4345900F7CA60 /* Frontb.png */,
-				C65D529F1FB4345800F7CA60 /* Sideb.png */,
-				C65D52991FB41D7F00F7CA60 /* Backa.png */,
-				C65D529A1FB41D7F00F7CA60 /* Fronta.png */,
-				C65D529B1FB41D7F00F7CA60 /* Sidea.png */,
-				C65D52971FB4173200F7CA60 /* Start.png */,
-				C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */,
 				84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */,
 				84FA87BD192DCAF800713E53 /* HeatSig.plist */,
 				84FA87BE192DCAF800713E53 /* InfoPlist.strings */,
@@ -231,6 +219,26 @@
 				84FA87DD192DCAF800713E53 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE8AF7071FC212D700CC07F6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C65176011FBAD3EE008D0458 /* waitOverLay.png */,
+				C65176021FBAD3FB008D0458 /* waitOverLay@2x.png */,
+				C65D52AE1FB571C700F7CA60 /* Ministryblk.png */,
+				C65D52AC1FB5562300F7CA60 /* email.png */,
+				C65D52A81FB5099600F7CA60 /* white.png */,
+				C65D52A01FB4345900F7CA60 /* Backb.png */,
+				C65D52A11FB4345900F7CA60 /* Frontb.png */,
+				C65D529F1FB4345800F7CA60 /* Sideb.png */,
+				C65D52991FB41D7F00F7CA60 /* Backa.png */,
+				C65D529A1FB41D7F00F7CA60 /* Fronta.png */,
+				C65D529B1FB41D7F00F7CA60 /* Sidea.png */,
+				C65D52971FB4173200F7CA60 /* Start.png */,
+				C65D52951FB40D4400F7CA60 /* Ministry Wordmark Copy 6@1x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		C65175EA1FBAB53F008D0458 /* bgEmailer */ = {
