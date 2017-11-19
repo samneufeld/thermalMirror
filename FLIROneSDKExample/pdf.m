@@ -8,10 +8,10 @@
 
 #import "pdf.h"
 
-#import <SystemConfiguration/SCNetworkReachability.h>
+/*#import <SystemConfiguration/SCNetworkReachability.h>
 #include <netinet/in.h>
 #import "SKPSMTPMessage.h"
-#import "NSData+Base64Additions.h"
+#import "NSData+Base64Additions.h"*/
 
 
 @interface pdf () //<SKPSMTPMessageDelegate>;

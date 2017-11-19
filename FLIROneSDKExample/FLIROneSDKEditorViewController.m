@@ -8,15 +8,15 @@
 
 #import <FLIROneSDK/FLIROneSDK.h>
 #import "FLIROneSDKEditorViewController.h"
-#import "SKPSMTPMessage.h"
+/*#import "SKPSMTPMessage.h"
 #import "NSData+Base64Additions.h"
 #import <SystemConfiguration/SCNetworkReachability.h>
 #include <netinet/in.h>
-#import <MessageUI/MessageUI.h>
+#import <MessageUI/MessageUI.h>*/
 
 
 
-@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate, SKPSMTPMessageDelegate, MFMailComposeViewControllerDelegate>{
+@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate, /*SKPSMTPMessageDelegate,*/ MFMailComposeViewControllerDelegate>{
     int counter;
 }
 
@@ -45,7 +45,12 @@
     return YES;
 }
 
-
+/*
+ 
+ //////////////////SMPT BLOCK////////////////////
+ 
+ 
+ 
 - (void)sendMessageInBack:(id)anObject{
     NSLog(@"Start Sending");
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -72,8 +77,8 @@
                                @"Some text to include in body",kSKPSMTPPartMessageKey,@"8bit",kSKPSMTPPartContentTransferEncodingKey,nil];
     
     
-    /*NSDictionary *vcfPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/directory;\r\n\tx-unix-mode=0644;\r\n\tname=\"filenametoshow.pdf\"",kSKPSMTPPartContentTypeKey,
-                             @"attachment;\r\n\tfilename=\"filenametoshow.pdf\"",kSKPSMTPPartContentDispositionKey,[dataObj encodeBase64ForData],kSKPSMTPPartMessageKey,@"base64",kSKPSMTPPartContentTransferEncodingKey,nil];*/
+    NSDictionary *vcfPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/directory;\r\n\tx-unix-mode=0644;\r\n\tname=\"filenametoshow.pdf\"",kSKPSMTPPartContentTypeKey,
+                             @"attachment;\r\n\tfilename=\"filenametoshow.pdf\"",kSKPSMTPPartContentDispositionKey,[dataObj encodeBase64ForData],kSKPSMTPPartMessageKey,@"base64",kSKPSMTPPartContentTransferEncodingKey,nil];
     
     testMsg.parts = [NSArray arrayWithObjects:plainPart,
                      //vcfPart,
@@ -99,7 +104,7 @@
     NSLog(@"delegate - message sent");
 }
 
-
+*/
 
 
 
@@ -212,7 +217,12 @@
         
         
         
-/*        [self.paletteButton setTitle:[NSString stringWithFormat:@"Palette: %@", self.palette.name] forState:UIControlStateNormal];
+/*
+ 
+        ////////////EXTENDED EDITING BLOCK/////////////////
+ 
+ 
+        [self.paletteButton setTitle:[NSString stringWithFormat:@"Palette: %@", self.palette.name] forState:UIControlStateNormal];
 
         if(self.imageOptions == FLIROneSDKImageOptionsBlendedMSXRGBA8888Image) {
             [self.renderModeButton setTitle:@"Mode: MSX" forState:UIControlStateNormal];
