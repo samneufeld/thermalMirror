@@ -16,7 +16,7 @@
 
 
 
-@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate, SKPSMTPMessageDelegate, MFMailComposeViewControllerDelegate>{
+@interface FLIROneSDKEditorViewController () <FLIROneSDKImageReceiverDelegate, FLIROneSDKImageEditorDelegate, /*SKPSMTPMessageDelegate,*/ MFMailComposeViewControllerDelegate>{
     int counter;
 }
 
