@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84622DF51B3B847C004F75D0 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */; };
 		84D742281AD59CD200CDAD11 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */; };
 		84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87BE192DCAF800713E53 /* InfoPlist.strings */; };
 		84FA87C2192DCAF800713E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87C1192DCAF800713E53 /* main.m */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		0D73AD6F1AC1CFF800EFCF56 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = ../../sampleframes_hq.bundle; sourceTree = "<group>"; };
 		84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		84FA87B2192DCAF800713E53 /* Thermal Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thermal Mirror.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FA87BD192DCAF800713E53 /* HeatSig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HeatSig.plist; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				BE8AF7101FC2339200CC07F6 /* unusedScripts */,
 				BE8AF70F1FC2337100CC07F6 /* images */,
-				84622DF41B3B847C004F75D0 /* sampleframes_hq.bundle */,
 				84FA87BD192DCAF800713E53 /* HeatSig.plist */,
 				84FA87BE192DCAF800713E53 /* InfoPlist.strings */,
 				84FA87C1192DCAF800713E53 /* main.m */,
@@ -302,7 +299,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84622DF51B3B847C004F75D0 /* sampleframes_hq.bundle in Resources */,
 				84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */,
 				C65D52981FB4173200F7CA60 /* Start.png in Resources */,
 				C65D529C1FB41D7F00F7CA60 /* Backa.png in Resources */,
